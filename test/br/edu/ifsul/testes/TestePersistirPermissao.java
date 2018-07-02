@@ -39,10 +39,10 @@ public class TestePersistirPermissao {
         boolean exception = false;
         try {
             Permissao p1 = new Permissao();
-            p1.setNome("ADMINISTRADOR");
+            p1.setNome("STAFF");
             p1.setDescricao("Usuario administrativo");
             Permissao p2 = new Permissao();
-            p2.setNome("USUARIO");
+            p2.setNome("JOGADOR");
             p2.setDescricao("Usuario simples");
             em.getTransaction().begin();
             em.persist(p1);
